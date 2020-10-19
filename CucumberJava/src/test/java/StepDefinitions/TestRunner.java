@@ -6,7 +6,7 @@ import io.cucumber.junit.CucumberOptions;
 import io.cucumber.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="src/test/resources/Features",glue= {"StepDefinitions"},monochrome = true,
+@CucumberOptions(features="/home/mitesh/git/CucumberDemoTest/CucumberJava/src/test/resources/Features",glue= {"StepDefinitions"},monochrome = true,
 plugin={"pretty","html:target/HtmlReports"})
 
 // For Json reports and create folder for it 

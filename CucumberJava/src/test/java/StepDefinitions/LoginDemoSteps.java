@@ -33,11 +33,10 @@ public class LoginDemoSteps {
 		
 	}
 
-	@When("user enter username and password")
-	public void user_enter_username_and_password() throws InterruptedException {
-		driver.findElement(By.id("name")).sendKeys("Test");
-		driver.findElement(By.id("password")).sendKeys("12345");
-		Thread.sleep(5000);
+	@When("user enter (.*) and (.*)")
+	public void user_enter_username_and_password(String username, String password)  {
+		driver.findElement(By.id("name")).sendKeys(username);
+		driver.findElement(By.id("password")).sendKeys(password);
 		
 
 	}
